@@ -24,10 +24,16 @@
     <!-- vueScript -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
     <div id="app">
-        <header class="container text-center py-3">
+        <header class="container text-center fw-bold py-3">
             <h1>{{ message }}</h1>
         </header>
-        <main class="container"></main>
+        <main class="container">
+            <ul>
+                <li v-for="(toDoItems,index) in toDoList">
+                    {{ toDoItems }}{{ index }}
+                </li>
+            </ul>
+        </main>
     </div>
 
 
