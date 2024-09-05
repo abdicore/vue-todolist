@@ -33,8 +33,8 @@
                     <div class="col-12">
                         <ul>
 
-                            <li v-for="(toDoItems,index) in toDoList">
-                                {{ toDoItems.text }} {{toDoItems.done}}
+                            <li v-for="(toDoItems,index) in toDoList" >
+                                {{ toDoItems.text }} - {{ toDoItems.done }} <i class="fa-solid fa-ban" style="color: red;"></i>
                             </li>
                         </ul>
                     </div>
