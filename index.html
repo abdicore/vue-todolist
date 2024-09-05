@@ -28,11 +28,20 @@
             <h1>{{ message }}</h1>
         </header>
         <main class="container">
-            <ul>
-                <li v-for="(toDoItems,index) in toDoList">
-                    {{ toDoItems }}{{ index }}
-                </li>
-            </ul>
+            <section id="list">
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+      todoList: [
+                            <li v-for="(toDoItems,index) in toDoList">
+                                {{ toDoItems.text }} {{toDoItems.done}}
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
         </main>
     </div>
 
